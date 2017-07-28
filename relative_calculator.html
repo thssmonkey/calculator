@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>亲戚计算器</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="source/relative_calculator.css" /> 
+    <script type="text/javascript" src="source/relative_calculator.js"></script>
+</head>  
+  
+<body>   
+<div id="relative_calculator">  
+    <div id="info">  
+        <textarea type="text" id="display" onfocus="this.blur();">我</textarea>
+        <textarea type="text" id="result" onfocus="this.blur();"></textarea>
+    </div>
+  
+    <div id="rows">
+        <div id="row1" class="row">
+            <div id="0" onclick="nextRelative(0)">夫</div>
+            <div id="1" onclick="nextRelative(1)">妻</div>
+            <div id="2" onclick="nextRelative(2)">父</div>
+            <div id="3" onclick="nextRelative(3)">母</div>
+        </div> 
+        <div id="row2" class="row">
+            <div id="4" onclick="nextRelative(4)">兄</div>
+            <div id="5" onclick="nextRelative(5)">弟</div>
+            <div id="6" onclick="nextRelative(6)">姐</div>
+            <div id="7" onclick="nextRelative(7)">妹</div>
+        </div> 
+        <div id="row3" class="row">
+            <div id="8" onclick="nextRelative(8)">儿</div>
+            <div id="9" onclick="nextRelative(9)">女</div>
+            <div id="back" onclick="back()">del</div>
+            <div id="AC" onclick="clean()">AC</div>
+        </div>  
+    </div>     
+</div>   
+</body>  
+</html>  

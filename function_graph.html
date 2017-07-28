@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>函数绘图</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="source/function_graph.css" />
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="source/function_graph.js"></script>
+</head>  
+  
+<body>  
+<div id="control">  
+    <div id="equationdiv">  
+        <textarea type="text" id="equation" onfocus="this.blur();">y=</textarea>  
+    </div>
+    <div>
+    x轴起始值<input id="xmin" type="number" step="1" min="-100" max="100" value="-10"/>
+    x方向长度<input id="xrange" type="number" step="1" min="1" max="200" value="20"/>
+    y轴起始值<input id="ymin" type="number" step="1" min="-100" max="100" value="-7"/>
+    y方向长度<input id="yrange" type="number" step="1" min="1" max="200" value="14"/>
+    </div>
+    <div id="keyboard">           
+        <div class="row">
+                <button id="bt1" class="num" onclick="clickbt(1)">1</button>
+                <button id="bt2" class="num" onclick="clickbt(2)">2</button>  
+                <button id="bt3" class="num" onclick="clickbt(3)">3</button>
+                <button id="bt4" class="num" onclick="clickbt(4)">4</button>
+                <button id="bt5" class="num" onclick="clickbt(5)">5</button>
+                <button id="bt6" class="num" onclick="clickbt(6)">6</button>
+                <button id="bt7" class="num" onclick="clickbt(7)">7</button>  
+                <button id="bt8" class="num" onclick="clickbt(8)">8</button>  
+                <button id="bt9" class="num" onclick="clickbt(9)">9</button> 
+                <button id="bt0" class="num" onclick="clickbt(0)">0</button> 
+                <button id="btdot" onclick="clickbt('.')">.</button>
+                <button id="btplus" class="oper" onclick="clickbt('+')">+</button>
+                <button id="btminus" onclick="clickbt('-')">-</button>
+                <button id="btmulti" class="oper" onclick="clickbt('*')">x</button>  
+                <button id="btdivide" class="oper" onclick="clickbt('÷')">÷</button> 
+                <button id="bt26" class="start" onclick="clickbt('sin(')">sin</button>  
+                <button id="btcos" class="start" onclick="clickbt('cos(')">cos</button>  
+                <button id="bttan" class="start" onclick="clickbt('tan(')">tan</button>
+                <button id="btln" class="start" onclick="clickbt('ln(')">ln</button>
+                <button id="btlog" class="start" onclick="clickbt('log(')">log</button>
+                <button id="btx" onclick="clickbt('x')">X</button>  
+                <button id="btPI" onclick="clickbt('π')">π</button>  
+                <button id="btbral" class="start" onclick="clickbt('(')">(</button>  
+                <button id="btbrar" class="end" onclick="clickbt(')')">)</button> 
+                <button id="btexp" class="oper" onclick="clickbt('^')">^</button> 
+                <button id="btclean" onclick="initial()">AC</button>  
+                <button id="btequal" class="oper" onclick="draw()"><strong>draw</strong></button>
+        </div>
+    </div>     
+</div>  
+<canvas id="graph"></canvas> 
+</body>  
+</html>  

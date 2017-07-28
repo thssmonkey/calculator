@@ -1,0 +1,28 @@
+html,body{height:100%}
+body {text-align:center; margin: 0 auto; }
+body {    
+    font-size:24px;   
+    font-family:Arial, Georgia, "Times New Roman", Times, serif;
+    text-align:center;        
+    background-color:rgba(0,100,100,0.5);        
+}
+canvas {position: absolute; left: 0px; top: 0px;}
+#control {position: fixed; bottom: 0px;}
+#keyboard {display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 20px; max-width: 899px;}
+.row {display: flex; flex-wrap: wrap; }
+#keyboard button {width: 60px; height: 40px; cursor: pointer; font-size: 15px; }
+#btequal {color: red;}
+#equationdiv{
+    margin: 20px;
+}
+#equation{  
+    width:300px;  
+    height:40px;  
+    font-size:35px;  
+    text-align: center;
+    direction:ltr;   
+    border:#C0C0C0;  
+    overflow:hidden;        
+    background-color:#C0C0C0;  
+    word-wrap : normal;   
+}
